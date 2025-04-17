@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.spec
+
+# Installer logs
+*.log
+
+# VSCode / PyCharm / JetBrains IDE
+.vscode/
+.idea/

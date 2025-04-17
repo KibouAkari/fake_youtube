@@ -1,0 +1,4 @@
+# This project requires Python 3.12 or later.
+# pyinstaller is needed to compile the Python script into an executable.
+
+pyinstaller>=6.0.0

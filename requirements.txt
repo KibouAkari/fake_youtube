@@ -2,3 +2,4 @@
 # pyinstaller is needed to compile the Python script into an executable.
 
 pyinstaller>=6.0.0
+Flask>=2.0.0

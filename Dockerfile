@@ -1,21 +1,13 @@
-# Use a lightweight Python-Image
-FROM python:3.12-slim
+# Use Nginx as a base
+FROM nginx:alpine
 
-# Set the working directory
-WORKDIR /app
+# Copy static HTML files to the nginx folder
+COPY html/ /usr/share/nginx/html
 
-# Copy the dependency file and install the dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Using own nginx configuration
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy the rest of the application code
-COPY . .
+# Port 80 exposed
+EXPOSE 80
 
-# Set the environment variable for Flask
-ENV FLASK_APP=youtube.py
 
-# Expose the port the app is running on
-EXPOSE 5000
-
-# Start the application
-CMD ["flask", "run", "--host=0.0.0.0"]

